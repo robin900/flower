@@ -688,6 +688,8 @@ var flower = (function () {
         $('#workers-table').DataTable({
             rowId: 'name',
             searching: true,
+            pageLength: 50,
+            stateSave: true, 
             paginate: false,
             select: true,
             scrollX: true,
@@ -749,6 +751,8 @@ var flower = (function () {
         $('#tasks-table').DataTable({
             rowId: 'uuid',
             searching: true,
+            pageLength: 50,
+            stateSave: true, 
             paginate: true,
             scrollX: true,
             scrollCollapse: true,
